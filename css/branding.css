@@ -780,72 +780,69 @@ h1 {
 }
 
 .imgmerch1 {
-    background-image: url(/img/NOVA/AGENDA.jpg );
+    background-image: url(../img/NOVA/AGENDA.jpg );
 }
 
 .imgmerch2 {
-    background-image: url(/img/NOVA/CARTEL\ PUBLICITARIO.jpg)
+    background-image: url(../img/NOVA/CARTEL\ PUBLICITARIO.jpg)
 }
 
 .imgmerch3 {
-    background-image: url(/img/NOVA/CARTELES.jpg);
+    background-image: url(../img/NOVA/CARTELES.jpg);
 }
 
 .imgmerch4 {
-    background-image: url(/img/NOVA/EMPAQUE\ 1.jpg);
+    background-image: url(../img/NOVA/EMPAQUE\ 1.jpg);
 }
 
 .imgmerch5 {
-    background-image: url(/img/NOVA/FLYER\ 1.jpg);
+    background-image: url(../img/NOVA/FLYER\ 1.jpg);
 }
 
 .imgmerch6 {
-    background-image: url(/img/NOVA/FLYER\ 2.jpg);
+    background-image: url(../img/NOVA/FLYER\ 2.jpg);
 }
 
 .imgmerch7 {
-    background-image: url(/img/NOVA/folder.jpg)
+    background-image: url(../img/NOVA/folder.jpg)
 }
 
 .imgmerch8 {
-    background-image: url(/img/NOVA/INVITACIÓN.jpg);
+    background-image: url(../img/NOVA/INVITACIÓN.jpg);
 }
 
 .imgmerch9 {
-    background-image: url(/img/NOVA/KIT\ CORPORATIVO.jpg);
+    background-image: url(../img/NOVA/KIT\ CORPORATIVO.jpg);
 }
 
 .imgmerch10 {
-    background-image: url(/img/NOVA/libreta.jpg);
+    background-image: url(../img/NOVA/libreta.jpg);
 }
 
 .imgmerch11 {
-    background-image: url(/img/NOVA/maleta.jpg);
+    background-image: url(../img/NOVA/maleta.jpg);
 }
 
 .imgmerch12 {
-    background-image: url(/img/NOVA/PEGATINAS.jpg);
+    background-image: url(../img/NOVA/PEGATINAS.jpg);
 }
 
 .imgmerch13 {
-    background-image: url(/img/NOVA/PORTADA\ REVISTA.jpg);
+    background-image: url(../img/NOVA/PORTADA\ REVISTA.jpg);
 }
 
 .imgmerch14 {
-    background-image: url(/img/NOVA/tarjetas\ de\ presentacion.jpg);
+    background-image: url(../img/NOVA/tarjetas\ de\ presentacion.jpg);
 }
 
 .imgmerch15 {
-    background-image: url(/img/NOVA/Tote\ bag.jpg);
+    background-image: url(../img/NOVA/Tote\ bag.jpg);
 }
 
 .imgmerch16 {
-    background-image: url(/img/NOVA/USB.jpg);
+    background-image: url(../img/NOVA/USB.jpg);
 }
 
-/* Media Queries para Responsividad */
-
-/* Smartphones (portrait and landscape) */
 @media (max-width: 767.98px) {
     .parte1 {
         height: 60vh; 

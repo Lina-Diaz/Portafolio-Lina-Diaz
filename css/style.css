@@ -169,6 +169,7 @@ h3,h1,h4,p{
 }
 
 .flecha{
+    background-image: url(../img/fkecha-06.png);
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -178,8 +179,8 @@ h3,h1,h4,p{
     background-repeat: no-repeat;
     margin-top: 100px;
     position: absolute;
-    left: 50%; /* Cambiado a left para un mejor centrado con transform */
-    transform: translateX(-50%); /* Centrado horizontal */
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 5%;
     transition: box-shadow 0.3s ease;
 }
@@ -188,15 +189,12 @@ h3,h1,h4,p{
     box-shadow: 0px 0px 15px white;
 }
 
-/* Base de footer para style.css, aunque headerFooter.css tiene estilos más específicos */
+
 footer{
-    background-color: #343a40; /* Usando un color más oscuro por defecto de Bootstrap para el footer */
+    background-color: #343a40;
     padding: 1.25rem 0;
 }
 
-/* --- Media Queries --- */
-
-/* Estilos para pantallas de hasta 768px (tablets) */
 @media (max-width: 768px) {
     .parte1, .parte2, .parte4{
         height: auto; /* La altura se ajusta al contenido */
