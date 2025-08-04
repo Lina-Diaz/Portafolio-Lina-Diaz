@@ -71,7 +71,7 @@ footer .row .col{
 
 .img1{ background-image: url(../img/REDESICONO-09.png); } 
 .img2{ background-image: url(../img/REDESICONO-07.png); } 
-.img3{ background-image: url(../img/REDESICONO-08.png); }
+.img3{ background-image: url(/img/REDESICONO-08.png); }
 .img4{ background-image: url(../img/REDESICONO-10.png); }
 
 .img1:hover, .img2:hover, .img3:hover, .img4:hover{
@@ -127,19 +127,19 @@ footer .row .col{
         padding: 0.4rem 0;
     }
 
-    /* Footer */
+
     footer .row .col {
-        flex-basis: 100%; /* Cada columna ocupa el 100% en celular */
+        flex-basis: 100%; 
         max-width: 100%;
         margin-bottom: 0.625rem;
     }
     .pisologo {
-        order: -1; /* Mantiene el logo arriba */
+        order: -1;
         flex-basis: 100%;
         margin-bottom: 0.8rem;
     }
     .img1, .img2, .img3, .img4 {
-        width: 40px; /* Íconos más pequeños en celular */
+        width: 40px;
         height: 40px;
     }
 }
