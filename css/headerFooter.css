@@ -69,10 +69,10 @@ footer .row .col{
     transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.img1{ background-image: url(/img/REDESICONO-09.png); } 
-.img2{ background-image: url(/img/REDESICONO-07.png); } 
-.img3{ background-image: url(/img/REDESICONO-08.png); }
-.img4{ background-image: url(/img/REDESICONO-10.png); }
+.img1{ background-image: url(../img/REDESICONO-09.png); } 
+.img2{ background-image: url(../img/REDESICONO-07.png); } 
+.img3{ background-image: url(../img/REDESICONO-08.png); }
+.img4{ background-image: url(../img/REDESICONO-10.png); }
 
 .img1:hover, .img2:hover, .img3:hover, .img4:hover{
     background-color: #FFC200;
