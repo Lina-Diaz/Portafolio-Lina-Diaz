@@ -1,0 +1,649 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    margin: auto;
+    width: 100%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white; 
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 135%; 
+}
+
+.logoNOVA {
+    background-image: url(../img/logo\ nova-31.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 110px;
+    height: 40px;
+}
+
+.parte1 {
+    background-image: url(../img/FONDOS-03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1000px; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.flecha {
+    background-image: url(/img/fkecha-06.png);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-position: center; /* Center the icon */
+    background-size: 50px;
+    background-repeat: no-repeat;
+    margin: auto;
+    display: flex;
+    justify-content: center; /* Center icon within circle */
+    align-items: center; /* Center icon within circle */
+    margin-top: 3rem;
+    transition: all 0.3s ease;
+}
+
+.flecha:hover {
+    box-shadow: 0px 0px 15px white;
+}
+
+.contexto1 {
+    margin: auto;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 480%; 
+    font-family: "Montserrat", sans-serif;
+    line-height: calc(var(--line-height) / 1.25);
+}
+
+.intro {
+    width: 80%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    padding: 20px;
+    margin: auto;
+}
+
+.introduccion {
+    width: 45%; 
+}
+
+.img_intro {
+    width: 500px; 
+    height: 500px;
+    background-image: url(../img/lina_img-32.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.h3up {
+    color: rgb(42, 18, 54);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 250%;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+.h1up {
+    color: rgb(85, 37, 110);
+    margin-bottom: -35px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 675%;
+    text-align: center;
+}
+
+.h4up {
+    color: rgb(42, 18, 54);
+    margin: 30px 0px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 300%;
+    text-align: center;
+}
+
+.Pup {
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+    width: 100%;
+    color: rgb(17, 7, 22);
+    font-weight: 500;
+}
+
+.redes {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.behance, .linkedin, .instagram, .whatsapp {
+    width: 280px;
+    height: 280px;
+    border-radius: 500px;
+    background-color: rgb(85, 37, 110);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: 1px 5px 8px rgba(50, 14, 68, 0.459);
+    border: 3px solid #FFC200; 
+    transition: all 0.3s ease;
+}
+
+.habilidad{
+    margin-bottom: 10%;
+}
+
+
+
+
+
+.hab{
+    border: 4px solid #FFC200;
+    border-radius: 100px;
+    height: auto;
+    padding: 10px 10px 10px 0px;
+    display: flex; /* Permite que el icono y la barra estén en la misma línea */
+    align-items: center; /* Centra verticalmente el contenido */
+    position: relative; /* Para el posicionamiento absoluto del icono */
+}
+
+.progress-bar-container { 
+    background: linear-gradient(to top, #55266E, #805BA4);
+    border-radius: 100px;
+    height: 40px; 
+    width: 0%; 
+    margin-left: 90px; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    overflow: hidden; 
+    transition: width 2.5s ease-out; 
+}
+
+
+
+.icono1, .icono2, .icono3, .icono4, .icono5, .icono6, .icono7, .icono8, .icono9, .icono10, .icono11, .icono12{
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    border: 4px solid #FFC200;
+    border-radius: 100px;
+    position: absolute;
+    box-shadow: 9px 2px 8px rgba(50, 14, 68, 0.5);
+    margin: -5px 0px 0px -5px;
+    z-index: 1;
+}
+
+.icono1{ background-image: url('/img/HABILIDADES/PHOTOSHOP.png'); }
+.icono2{ background-image: url('/img/HABILIDADES/ILLUSTRATOR.png'); }
+.icono3{ background-image: url('/img/HABILIDADES/INDESIGN.png'); }
+.icono4{ background-image: url('/img/HABILIDADES/ANIMATE.png'); }
+.icono5{ background-image: url('/img/HABILIDADES/LIGHTROOM.png'); }
+.icono6{ background-image: url('/img/HABILIDADES/PREMIERE.png'); }
+.icono7{ background-image: url('/img/HABILIDADES/AFTER%20EFFECTS.png'); }
+.icono8{ background-image: url('/img/HABILIDADES/CANVA.webp'); }
+.icono9{ background-image: url('/img/HABILIDADES/CAP%20CUT.jpg'); }
+.icono10{ background-image: url('/img/HABILIDADES/KRITA.webp'); }
+.icono11{ background-image: url('/img/HABILIDADES/BLENDER.svg'); }
+.icono12{ background-image: url('/img/HABILIDADES/VISUAL%20CODE.jpg'); }
+
+
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+  color: white;
+}
+
+.fill {
+  --color: #a972cb;
+  --hover: #FFC200;
+    border: 4px solid #FFC200;
+    border-radius: 100px;
+    padding: 20px 180px;
+    background: linear-gradient(to top, #55266E, #805BA4)!important;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.idiomas{
+    margin: 7% 0;
+}
+
+.hab2{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    color: white;
+    margin-bottom: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #eee;
+}
+
+.skills-container {
+  margin-top: 2em;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.circular-progress {
+  margin: auto;
+  position: relative;
+}
+.circular-progress, .circular-progress:before, .circular-progress:after {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.circular-progress:before, .circular-progress:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+.circular-progress:before {
+  padding: 0.5em;
+  line-height: 140px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.circular-progress:after {
+  font-size: 0.8rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 230px;
+}
+
+.html {
+  background: linear-gradient(54deg, #FFC200 50%, rgba(255, 217, 0, 0.424) 50%);
+  transform: rotate(126deg);
+}
+.html:before, .html:after {
+  color: #FFC200;
+}
+.html:before {
+  background: white content-box;
+  transform: rotate(-126deg);
+  content: "100%";
+}
+.html:after {
+  background: linear-gradient(transparent 50%, white 50%);
+  content: "PENSAMIENTO CREATIVO";
+  transform: rotate(-126deg) scale(1.3);
+}
+
+.css {
+  background: linear-gradient(27deg, #55266E 50%, #55266e5d 50%);
+  transform: rotate(153deg);
+}
+.css:before, .css:after {
+  color: #55266E;
+}
+.css:before {
+  background: white content-box;
+  transform: rotate(-153deg);
+  content: "100%";
+}
+.css:after {
+  background: linear-gradient(transparent 50%, white 50%);
+  content: "ESCUCHA ACTIVA";
+  transform: rotate(-153deg) scale(1.3);
+}
+
+.javascript {
+  background: linear-gradient(35deg, #FFC200 50%, rgba(255, 217, 0, 0.424) 50%);
+  transform: rotate(144deg);
+}
+.javascript:before, .javascript:after {
+  color: #FFC200;
+}
+.javascript:before {
+  background: white content-box;
+  transform: rotate(-144deg);
+  content: "100%";
+}
+.javascript:after {
+  background: linear-gradient(transparent 50%, white 50%);
+  content: "ATENCIÓN AL DETALLE";
+  transform: rotate(-144deg) scale(1.3);
+}
+
+.php {
+  background: linear-gradient(126deg, #55266E 50%, #55266e5d 50%);
+  transform: rotate(54deg);
+}
+.php:before, .php:after {
+  color: #55266E;
+}
+.php:before {
+  background: white content-box;
+  transform: rotate(-54deg);
+  content: "100%";
+}
+.php:after {
+  background: linear-gradient(transparent 50%, white 50%);
+  content: "ORGANIZACIÓN";
+  transform: rotate(-54deg) scale(1.3);
+}
+
+.card{
+    border: none !important;
+}
+
+.img-fluid {
+    height: 90%;
+    margin-top: 10%;
+}
+
+div:hover .behance:not(:hover),
+div:hover .linkedin:not(:hover),
+div:hover .instagram:not(:hover),
+div:hover .whatsapp:not(:hover) {
+    opacity: 0.7;
+    transform: scale(0.85);
+}
+
+.behance:hover, .linkedin:hover, .instagram:hover, .whatsapp:hover {
+    transform: scale(1.05) translateY(-5%);
+    box-shadow: 0 8px 10px rgba(0,0,0,0.35);
+}
+ 
+.behance:active, .linkedin:active, .instagram:active, .whatsapp:active {
+    transform: scale(1.05) translateY(0%);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.35);
+}
+
+.img1te, .img2te, .img3te, .img4te {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;   
+}
+
+.img1te {
+    background-image: url(../img/REDESICONO-09.png);
+    background-size: cover;
+}
+
+.img2te {
+    background-image: url(../img/REDESICONO-07.png);
+    background-size: 100%;
+    background-position: center;
+}
+
+.img3te {
+    background-image: url(../img/REDESICONO-08.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img4te {
+    background-image: url(../img/REDESICONO-10.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.h3te { 
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(85, 37, 110);
+    margin:3%;
+}
+
+.h2te { 
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(85, 37, 110);
+}
+
+.buttonHV {
+    background-color: rgb(85, 37, 110);
+    width: 22%;
+    padding: 1%;
+    margin: 8% auto;
+    display: flex;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 1px 5px 8px rgba(50, 14, 68, 0.459);
+    border: 3px solid rgb(255, 174, 0); 
+}
+
+.btnYA {
+    padding: 2%;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    font-weight: 600;
+}
+
+/* --- Mobile Styles (less than 768px, applies to phones) --- */
+@media (max-width: 767.98px) {
+    .parte1 {
+        height: 600px; /* Shorter height for mobile hero section */
+    }
+
+    h1 {
+        font-size: 250%; /* Smaller text for main heading on mobile */
+    }
+
+    .flecha {
+        width: 60px; /* Smaller arrow icon */
+        height: 60px;
+        background-size: 40px;
+        margin-top: 1.5rem;
+    }
+
+    .parte2 {
+        padding: 80px 0; /* Reduced padding for mobile */
+    }
+
+    .intro {
+        flex-direction: column; /* Stack elements vertically on mobile */
+        width: 95%; /* Wider content area for mobile */
+        gap: 20px; /* Smaller gap */
+    }
+
+    .introduccion {
+        width: 100%; /* Full width for text on mobile */
+        margin-bottom: 30px;
+    }
+
+    .img_intro {
+        width: 250px; /* Smaller image on mobile */
+        height: 250px;
+        margin-top: 20px; /* Add space above image */
+    }
+
+    .h3up {
+        font-size: 150%; /* Smaller heading font size */
+    }
+
+    .h1up {
+        font-size: 350%; /* Smaller main name font size */
+        margin-bottom: 0px;
+    }
+
+    .h4up {
+        font-size: 180%; /* Smaller sub-heading font size */
+        margin: 15px 0px;
+    }
+
+    .Pup {
+        font-size: 95%; /* Slightly smaller paragraph text */
+    }
+
+    .h3te {
+        font-size: 180%; /* Smaller contact heading */
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .redes {
+        flex-wrap: wrap; /* Allow icons to wrap to next line */
+        gap: 20px; /* Smaller gap between icons */
+        margin-bottom: 50px;
+    }
+
+    .behance, .linkedin, .instagram, .whatsapp {
+        width: 130px; /* Smaller social icons on mobile */
+        height: 130px;
+        border-width: 2px; /* Thinner border */
+    }
+
+    .img1te, .img2te, .img3te, .img4te {
+        width: 110px; /* Adjust inner image size */
+        height: 110px;
+    }
+
+    .buttonHV {
+        width: 70%;
+        padding: 15px;
+    }
+
+    .btnYA {
+        font-size: 110%;
+    }
+}
+
+
+/* --- Tablet Styles (768px to 991.98px) --- */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .parte1 {
+        height: 800px; /* Medium height for tablet hero section */
+    }
+
+    h1 {
+        font-size: 350%; /* Medium text for main heading on tablet */
+    }
+
+    .flecha {
+        width: 70px; /* Medium arrow icon */
+        height: 70px;
+        background-size: 45px;
+        margin-top: 2rem;
+    }
+
+    .parte2 {
+        padding: 150px 0; /* Medium padding for tablet */
+    }
+
+    .intro {
+        flex-direction: row; /* Keep side-by-side on tablet */
+        width: 90%; /* Slightly wider content for tablet */
+        gap: 5%; /* Adjusted gap */
+    }
+
+    .introduccion {
+        width: 55%; /* Adjust width for text on tablet */
+    }
+
+    .img_intro {
+        width: 350px; /* Medium image size on tablet */
+        height: 350px;
+    }
+
+    .h3up {
+        font-size: 200%; /* Medium heading font size */
+    }
+
+    .h1up {
+        font-size: 500%; /* Medium main name font size */
+    }
+
+    .h4up {
+        font-size: 250%; /* Medium sub-heading font size */
+    }
+
+    .Pup {
+        font-size: 105%; /* Slightly larger paragraph text */
+    }
+
+    .h3te {
+        font-size: 190%; /* Medium contact heading */
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+
+    .redes {
+        gap: 30px; /* Medium gap between icons */
+        flex-wrap: wrap; /* Allow wrapping */
+    }
+
+    .behance, .linkedin, .instagram, .whatsapp {
+        width: 200px; /* Medium social icons on tablet */
+        height: 200px;
+    }
+
+    .img1te, .img2te, .img3te, .img4te {
+        width: 170px; /* Adjust inner image size */
+        height: 170px;
+    }
+
+    .buttonHV {
+        width: 40%;
+        padding: 18px;
+    }
+}
+
+/* --- Desktop Styles (992px to 1199.98px) --- */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Styles for regular desktops, you can fine-tune here if needed,
+       otherwise, the base styles will mostly apply */
+    .h1up {
+        font-size: 600%; /* Slightly smaller than original on smaller desktops */
+    }
+    .img_intro {
+        width: 450px; /* Slightly smaller image on smaller desktops */
+        height: 450px;
+    }
+}
+
+/* --- Larger Desktop Styles (1200px and up) --- */
+@media (min-width: 1200px) {
+    /* These styles inherit from the base (your original design)
+       unless specifically overridden for very large screens. */
+}

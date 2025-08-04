@@ -1,0 +1,145 @@
+
+.montserrat-regular {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.navbar{
+    background: linear-gradient(to bottom, #55266E, #805BA4)!important;
+    z-index: 15;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 3px 16px rgba(50, 14, 68, 0.638);
+    border-bottom:4px solid #FFC200;
+}
+
+.navbar-collapse {
+    flex-grow: 0; 
+}
+
+.nav-item a{
+    color: white !important;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 0 1rem;
+}
+
+.nav-item a:hover{
+    color: #FFC200 !important;
+}
+
+footer{
+    background: linear-gradient(to top, #55266E, #805BA4)!important;
+    padding: 2rem 0;
+    border-top: 4px solid #FFC200;
+    width: 100%; 
+}
+
+footer .container{
+    display: flex;
+    gap: 2rem;
+    padding: 0 0.9375rem; 
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+footer .row{
+    width: 100%;
+    justify-content: center; 
+    align-items: center;
+}
+
+footer .row .col{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 0.625rem;
+}
+
+.img1, .img2, .img3, .img4{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.img1{ background-image: url(/img/REDESICONO-09.png); } 
+.img2{ background-image: url(/img/REDESICONO-07.png); } 
+.img3{ background-image: url(/img/REDESICONO-08.png); }
+.img4{ background-image: url(/img/REDESICONO-10.png); }
+
+.img1:hover, .img2:hover, .img3:hover, .img4:hover{
+    background-color: #FFC200;
+    box-shadow: 0px 0px 12px white;
+    transform: scale(1.1);
+}
+
+.pisologo img {
+    width: 90px;
+    height: auto;
+    margin: 0.625rem 0;
+}
+
+@media (max-width: 768px) {
+
+    .navbar-brand img {
+        width: 70px; 
+        height: auto;
+    }
+    .navbar-toggler {
+        font-size: 1.2rem;
+    }
+    .navbar-nav .nav-link {
+        font-size: 1rem; 
+        padding: 0.5rem 0; 
+        text-align: center;
+    }
+
+    footer .row .col {
+        flex-basis: 45%;
+        max-width: 45%;
+        margin-bottom: 1.25rem; 
+    }
+    .pisologo {
+        order: -1;
+        flex-basis: 100%; 
+        margin-bottom: 1rem; 
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .navbar-brand img {
+        width: 60px; 
+    }
+    .navbar-toggler {
+        font-size: 1rem;
+    }
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+        padding: 0.4rem 0;
+    }
+
+    /* Footer */
+    footer .row .col {
+        flex-basis: 100%; /* Cada columna ocupa el 100% en celular */
+        max-width: 100%;
+        margin-bottom: 0.625rem;
+    }
+    .pisologo {
+        order: -1; /* Mantiene el logo arriba */
+        flex-basis: 100%;
+        margin-bottom: 0.8rem;
+    }
+    .img1, .img2, .img3, .img4 {
+        width: 40px; /* Íconos más pequeños en celular */
+        height: 40px;
+    }
+}

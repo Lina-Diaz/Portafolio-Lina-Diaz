@@ -1,0 +1,321 @@
+/* Estilos Globales y de Escritorio (Base) */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    margin: auto;
+    width: 100%; /* El contenedor ahora ocupa todo el ancho y se adaptará */
+    max-width: 1920px; /* Limita el ancho máximo para pantallas muy grandes */
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.35rem; /* Usando rem para adaptabilidad */
+}
+
+.btnYA{
+    padding: 2%;
+    color: blueviolet;
+    margin: auto;
+    font-weight: 600;
+    display: block; /* Asegura que el padding funcione correctamente */
+    text-align: center; /* Centra el texto dentro del botón */
+}
+
+button{
+    background-color: aliceblue;
+    width: 300px; /* Ancho fijo para escritorio */
+    margin: auto;
+    display: flex;
+    border-radius: 35px;
+    border: none ;
+    justify-content: center; /* Centra el contenido del botón */
+    align-items: center; /* Centra el contenido del botón */
+}
+
+button:hover{
+    box-shadow: 0px 0px 15px white;
+}
+
+.parte1, .parte2, .parte4{
+    height: 1000px; /* Altura fija para escritorio */
+    display: flex;
+    align-items: center;
+    border-bottom: 6px solid rgb(85, 37, 110);
+    position: relative; /* Para posicionar la flecha */
+}
+
+.parte1{
+    background-image: url(../img/fondo-29.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.parte2{
+    background-image: url(../img/FONDOS-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.parte4{
+    background-image: url(../img/FONDOS-03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.intro, .contexto1, .contexto3{
+    width: 70%; /* Ancho para escritorio */
+    margin: auto;
+    padding: 1.25rem; /* Añadido padding para asegurar espacio */
+}
+
+.intro{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    padding: 1.25rem;
+}
+
+.introduccion{
+    width: 45%; /* Ancho fijo para escritorio */
+}
+
+.img_intro{
+    width: 500px; /* Ancho fijo para escritorio */
+    height: 500px; /* Alto fijo para escritorio */
+    background-image: url(../img/lina_img-32.png);
+    background-color: white;
+    background-size: 120%;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: 0px 11px 12px rgba(50, 14, 68, 0.459);
+    border: 4px solid #FFC200;
+    flex-shrink: 0; /* Evita que la imagen se encoja */
+}
+
+h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 2rem; /* Usando rem para adaptabilidad */
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 0.625rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 5rem; /* Usando rem para adaptabilidad */
+    text-align: center;
+}
+
+h4{
+    margin: 1.875rem 0px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem; /* Usando rem para adaptabilidad */
+    text-align: center;
+}
+
+p{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    width: 70%; /* Ancho para escritorio */
+    margin: 3.125rem auto;
+    font-size: 1.125rem; /* Usando rem para adaptabilidad */
+}
+
+h3,h1,h4,p{
+    color: white;
+}
+
+.h3up{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.h1up{
+    margin-bottom: 0.625rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 5rem;
+    text-align: justify;
+}
+
+.h4up{
+    margin: 1.875rem 0px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.Pup{
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+    width: 100%;
+}
+
+.flecha{
+    background-image: url(/img/fkecha-06.png);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-position: 15px 24px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    position: absolute;
+    left: 50%; /* Cambiado a left para un mejor centrado con transform */
+    transform: translateX(-50%); /* Centrado horizontal */
+    bottom: 5%;
+    transition: box-shadow 0.3s ease;
+}
+
+.flecha:hover{
+    box-shadow: 0px 0px 15px white;
+}
+
+/* Base de footer para style.css, aunque headerFooter.css tiene estilos más específicos */
+footer{
+    background-color: #343a40; /* Usando un color más oscuro por defecto de Bootstrap para el footer */
+    padding: 1.25rem 0;
+}
+
+/* --- Media Queries --- */
+
+/* Estilos para pantallas de hasta 768px (tablets) */
+@media (max-width: 768px) {
+    .parte1, .parte2, .parte4{
+        height: auto; /* La altura se ajusta al contenido */
+        min-height: 700px; /* Altura mínima para que no se vea vacío */
+        flex-direction: column; /* Apila el contenido verticalmente */
+        justify-content: center;
+        padding: 2.5rem 1.25rem; /* Ajusta el padding */
+    }
+
+    .intro{
+        flex-direction: column; /* Apila la introducción y la imagen */
+        width: 100%;
+        gap: 1.875rem; /* Reduce el espacio entre elementos */
+    }
+
+    .introduccion{
+        width: 90%; /* Ocupa casi todo el ancho disponible */
+        order: 2; /* Cambia el orden para que la imagen quede arriba */
+    }
+
+    .img_intro{
+        width: 280px; /* Reduce el tamaño de la imagen de intro */
+        height: 280px;
+        order: 1; /* Pone la imagen al principio */
+    }
+
+    .contexto1, .contexto3{
+        width: 90%; /* Ocupa más ancho en tabletas */
+        text-align: center;
+        padding: 0; /* Elimina padding adicional si ya está en .parteX */
+    }
+
+    h3, h1, h4, p {
+        text-align: center !important; /* Centra todo el texto por defecto */
+    }
+    h3 {
+        font-size: 1.5rem; /* Ajusta el tamaño de h3 */
+    }
+    h1 {
+        font-size: 3.5rem; /* Ajusta el tamaño de h1 */
+    }
+    h4 {
+        font-size: 1rem; /* Ajusta el tamaño de h4 */
+    }
+    p {
+        font-size: 1rem; /* Ajusta el tamaño de p */
+        width: 90%; /* Ajusta el ancho del párrafo */
+        margin: 1.25rem auto; /* Centra el párrafo */
+    }
+
+    .h3up, .h1up, .h4up, .Pup {
+        text-align: center !important; /* Sobreescribe el justify */
+    }
+
+    button{
+        width: 250px; /* Reduce el ancho de los botones */
+    }
+
+    .flecha{
+        width: 60px;
+        height: 60px;
+        background-position: 10px 18px;
+        background-size: 40px;
+        margin-top: 3.125rem;
+        bottom: 3%;
+        /* Mantiene left: 50% y transform: translateX(-50%) del estilo base */
+    }
+}
+
+/* Estilos para pantallas de hasta 576px (celulares) */
+@media (max-width: 576px) {
+    .parte1, .parte2, .parte4{
+        min-height: 500px; /* Altura mínima para celulares */
+        padding: 1.875rem 0.9375rem;
+    }
+
+    .intro{
+        gap: 1.25rem;
+    }
+
+    .introduccion{
+        width: 100%;
+    }
+
+    .img_intro{
+        width: 200px; /* Reduce la imagen aún más */
+        height: 200px;
+    }
+
+    .contexto1, .contexto3{
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h4 {
+        font-size: 0.9rem;
+    }
+    p {
+        font-size: 0.875rem;
+        width: 100%;
+        margin: 0.9375rem auto;
+    }
+
+    button{
+        width: 200px; /* Reduce el ancho de los botones */
+    }
+
+    .flecha{
+        width: 50px;
+        height: 50px;
+        background-position: 8px 14px;
+        background-size: 30px;
+        margin-top: 1.875rem;
+        bottom: 2%;
+    }
+}
