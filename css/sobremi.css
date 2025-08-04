@@ -182,18 +182,18 @@ h1 {
     z-index: 1;
 }
 
-.icono1{ background-image: url(../../img/HABILIDADES/PHOTOSHOP.png); }
-.icono2{ background-image: url(../../img/HABILIDADES/ILLUSTRATOR.png); }
-.icono3{ background-image: url(../../img/HABILIDADES/INDESIGN.png); }
-.icono4{ background-image: url(../../img/HABILIDADES/ANIMATE.png); }
-.icono5{ background-image: url(../../img/HABILIDADES/LIGHTROOM.png); }
-.icono6{ background-image: url(../../img/HABILIDADES/PREMIERE.png); }
-.icono7{ background-image: url(../../img/HABILIDADES/AFTER\ EFFECTS.png); }
-.icono8{ background-image: url(../../img/HABILIDADES/CANVA.webp); }
-.icono9{ background-image: url(../../img/HABILIDADES/CAP\ CUT.jpg); }
-.icono10{ background-image: url(../../img/HABILIDADES/KRITA.webp); }
-.icono11{ background-image: url(../../img/HABILIDADES/BLENDER.svg); }
-.icono12{ background-image: url(../../img/HABILIDADES/VISUAL\ CODE.jpg); }
+.icono1{ background-image: url(../img/HABILIDADES/PHOTOSHOP.png); }
+.icono2{ background-image: url(../img/HABILIDADES/ILLUSTRATOR.png); }
+.icono3{ background-image: url(../img/HABILIDADES/INDESIGN.png); }
+.icono4{ background-image: url(../img/HABILIDADES/ANIMATE.png); }
+.icono5{ background-image: url(../img/HABILIDADES/LIGHTROOM.png); }
+.icono6{ background-image: url(../img/HABILIDADES/PREMIERE.png); }
+.icono7{ background-image: url(../img/HABILIDADES/AFTER\ EFFECTS.png); }
+.icono8{ background-image: url(../img/HABILIDADES/CANVA.webp); }
+.icono9{ background-image: url(../img/HABILIDADES/CAP\ CUT.jpg); }
+.icono10{ background-image: url(../img/HABILIDADES/KRITA.webp); }
+.icono11{ background-image: url(../img/HABILIDADES/BLENDER.svg); }
+.icono12{ background-image: url(../img/HABILIDADES/VISUAL\ CODE.jpg); }
 
 
 .fill:hover,
@@ -449,13 +449,6 @@ div:hover .whatsapp:not(:hover) {
         font-size: 250%; /* Smaller text for main heading on mobile */
     }
 
-    .flecha {
-        width: 60px; /* Smaller arrow icon */
-        height: 60px;
-        background-size: 40px;
-        margin-top: 1.5rem;
-    }
-
     .parte2 {
         padding: 80px 0; /* Reduced padding for mobile */
     }
@@ -537,13 +530,6 @@ div:hover .whatsapp:not(:hover) {
 
     h1 {
         font-size: 350%; /* Medium text for main heading on tablet */
-    }
-
-    .flecha {
-        width: 70px; /* Medium arrow icon */
-        height: 70px;
-        background-size: 45px;
-        margin-top: 2rem;
     }
 
     .parte2 {

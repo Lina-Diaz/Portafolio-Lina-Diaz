@@ -47,24 +47,6 @@ a {
     padding: 5% 0;
 }
 
-.flecha {
-    background-image: url(/img/fkecha-06.png);
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 1px solid white;
-    background-position: 15px 24px;
-    background-size: 50px;
-    background-repeat: no-repeat;
-    margin: auto;
-    display: flex;
-    margin-top: 3rem;
-}
-
-.flecha:hover {
-    box-shadow: 0px 0px 15px white;
-}
-
 h3 {
     color: white;
     text-align: center;
@@ -404,13 +386,6 @@ h1 {
     .foto1, .foto2, .foto3, .foto4, .foto5, .foto6, .foto7 {
         height: 100%;
         border-radius: 30px;
-    }
-    .flecha {
-        width: 60px;
-        height: 60px;
-        background-position: 10px 18px;
-        background-size: 40px;
-        margin-top: 2rem;
     }
 }
 

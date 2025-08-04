@@ -109,6 +109,13 @@ footer .row .col{
 
 @media (max-width: 768px) {
 
+    .flecha {
+        width: 60px;
+        height: 60px;
+        background-size: 40px;
+        margin-top: 1.5rem;
+    }
+
     .navbar-brand img {
         width: 70px; 
         height: auto;

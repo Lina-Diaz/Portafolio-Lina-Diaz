@@ -48,7 +48,7 @@ button:hover{
     display: flex;
     align-items: center;
     border-bottom: 6px solid rgb(85, 37, 110);
-    position: relative; /* Para posicionar la flecha */
+    position: relative;
 }
 
 .parte1{
@@ -168,27 +168,6 @@ h3,h1,h4,p{
     width: 100%;
 }
 
-.flecha{
-    background-image: url(/img/fkecha-06.png);
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 1px solid white;
-    background-position: 15px 24px;
-    background-size: 50px;
-    background-repeat: no-repeat;
-    margin-top: 100px;
-    position: absolute;
-    left: 50%; /* Cambiado a left para un mejor centrado con transform */
-    transform: translateX(-50%); /* Centrado horizontal */
-    bottom: 5%;
-    transition: box-shadow 0.3s ease;
-}
-
-.flecha:hover{
-    box-shadow: 0px 0px 15px white;
-}
-
 /* Base de footer para style.css, aunque headerFooter.css tiene estilos más específicos */
 footer{
     background-color: #343a40; /* Usando un color más oscuro por defecto de Bootstrap para el footer */
@@ -255,16 +234,6 @@ footer{
     button{
         width: 250px; /* Reduce el ancho de los botones */
     }
-
-    .flecha{
-        width: 60px;
-        height: 60px;
-        background-position: 10px 18px;
-        background-size: 40px;
-        margin-top: 3.125rem;
-        bottom: 3%;
-        /* Mantiene left: 50% y transform: translateX(-50%) del estilo base */
-    }
 }
 
 /* Estilos para pantallas de hasta 576px (celulares) */
@@ -310,12 +279,4 @@ footer{
         width: 200px; /* Reduce el ancho de los botones */
     }
 
-    .flecha{
-        width: 50px;
-        height: 50px;
-        background-position: 8px 14px;
-        background-size: 30px;
-        margin-top: 1.875rem;
-        bottom: 2%;
-    }
 }
