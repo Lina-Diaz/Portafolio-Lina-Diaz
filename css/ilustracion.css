@@ -675,6 +675,13 @@ h1 {
     .gallery article {
         margin-bottom: 20px; /* Space between articles on mobile */
     }
+    
+    .icon--menu-toggle {
+        width: 70px;
+        height: 70px;
+        bottom: 5%;
+        right: 3%;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
