@@ -663,10 +663,6 @@ h1 {
         font-size: 100%;
     }
 
-    .main-navigation .acaja {
-        font-size: 200%; /* Adjust font size for mobile menu */
-    }
-
     .gallery {
         grid-template-columns: 1fr; /* Single column for gallery on mobile */
     }
