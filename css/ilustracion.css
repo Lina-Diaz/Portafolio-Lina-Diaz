@@ -703,10 +703,6 @@ h1 {
         height: 400px; /* Adjust height for tablet */
     }
 
-    .main-navigation .acaja {
-        font-size: 250%; /* Adjust font size for tablet menu */
-    }
-
     .gallery {
         grid-template-columns: repeat(2, 1fr); /* Two columns for gallery on tablets */
     }
