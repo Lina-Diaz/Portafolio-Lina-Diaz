@@ -490,6 +490,8 @@ h1 {
     font-weight: 600;
     font-size: 40%;
 }
+
+
  
 .main-content {
     margin: 6rem auto;
@@ -952,7 +954,6 @@ h1 {
     }
 
     .main-navigation .acaja {
-        font-size: 30%;
         padding: var(--space) calc(var(--space) * 1) calc(var(--space) + var(--border-size) / 2);
     }
 }

@@ -1259,4 +1259,11 @@ h2 {
   .buttonHV {
     width: 40%;
   }
+
+  .icon--menu-toggle {
+    width: 60px;
+    height: 60px;
+    bottom: 5%;
+    right: 5%;
+  }
 }

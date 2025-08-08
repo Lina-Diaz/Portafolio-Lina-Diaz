@@ -798,6 +798,10 @@ h2 {
   color: white;
 }
 
+ol, ul {
+    padding-left: none;
+}
+
 
 @media (max-width: 575.98px) {
   h1 {
@@ -954,10 +958,10 @@ h2 {
   }
 
   .icon--menu-toggle {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     bottom: 5%;
-    right: 3%;
+    right: 5%;
   }
 }
 
