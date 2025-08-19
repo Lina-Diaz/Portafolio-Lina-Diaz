@@ -313,7 +313,7 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
-        // Llama a la función al cargar la página y al redimensionar
+        
         $(document).ready(function () {
             animateProgressBars();
         });
@@ -323,20 +323,18 @@
         });
 
         function animateProgressBars() {
-            // Selecciona todos los contenedores de la barra de progreso
+            
             $(".progress-bar-container").each(function () {
                 var $progressBarContainer = $(this);
-                var percentage = $progressBarContainer.data("percentage"); // Obtiene el porcentaje del atributo de datos
-                var $progressText = $progressBarContainer.find(".progress-text"); // Encuentra el texto dentro de esta barra
+                var percentage = $progressBarContainer.data("percentage"); 
+                var $progressText = $progressBarContainer.find(".progress-text"); 
 
-                // Anima el ancho de la barra al porcentaje deseado
                 $progressBarContainer.css("width", percentage + "%");
 
-                // Anima el conteo del texto
                 $({ Counter: 0 }).animate({
                     Counter: percentage
                 }, {
-                    duration: 2500, // Misma duración que tu animación original
+                    duration: 2500,
                     easing: 'swing',
                     step: function (now) {
                         $progressText.text(Math.ceil(now) + '%');
