@@ -432,6 +432,14 @@ div:hover .whatsapp:not(:hover) {
     border: 3px solid rgb(255, 174, 0); 
 }
 
+.buttonHV:hover,
+.buttonHV:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+  color: white;
+  background-color: rgb(255, 174, 0);
+}
+
+
 .btnYA {
     padding: 2%;
     color: rgb(255, 255, 255);
