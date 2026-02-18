@@ -70,11 +70,20 @@ h1 {
 .img_intro {
     width: 500px; 
     height: 500px;
-    background-image: url(../img/lina_img-32.png);
+    background-image: url(../img/LINA-2026.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 50%;
+}
+
+.mini-lina {
+    width: auto; 
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 15%;
 }
 
 .h3up {
