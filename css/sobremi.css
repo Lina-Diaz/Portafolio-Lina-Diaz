@@ -84,6 +84,7 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 15%;
+    padding-left: 20%;
 }
 
 .h3up {
@@ -146,10 +147,6 @@ h1 {
     margin-bottom: 10%;
 }
 
-
-
-
-
 .hab{
     border: 4px solid #FFC200;
     border-radius: 100px;
@@ -183,11 +180,12 @@ h1 {
     height: 80px;
     background-size: cover;
     background-position: center;
-    border: 4px solid #FFC200;
+    border: 8px solid #FFC200;
+    background-color: #FFC200;
     border-radius: 100px;
     position: absolute;
     box-shadow: 9px 2px 8px rgba(50, 14, 68, 0.5);
-    margin: -5px 0px 0px -5px;
+    margin: 0px 0px 0px -5px;
     z-index: 1;
 }
 
@@ -198,11 +196,11 @@ h1 {
 .icono5{ background-image: url(../img/HABILIDADES/LIGHTROOM.png); }
 .icono6{ background-image: url(../img/HABILIDADES/PREMIERE.png); }
 .icono7{ background-image: url(../img/HABILIDADES/AFTER\ EFFECTS.png); }
-.icono8{ background-image: url(../img/HABILIDADES/CANVA.webp); }
-.icono9{ background-image: url(../img/HABILIDADES/CAP\ CUT.jpg); }
-.icono10{ background-image: url(../img/HABILIDADES/KRITA.webp); }
-.icono11{ background-image: url(../img/HABILIDADES/BLENDER.svg); }
-.icono12{ background-image: url(../img/HABILIDADES/VISUAL\ CODE.jpg); }
+.icono8{ background-image: url(../img/HABILIDADES/CANVA.png); }
+.icono9{ background-image: url(../img/HABILIDADES/CAP\ CUT.png); }
+.icono10{ background-image: url(../img/HABILIDADES/FIGMA.png); }
+.icono11{ background-image: url(../img/HABILIDADES/BLENDER.png); }
+.icono12{ background-image: url(../img/HABILIDADES/VISUAL\ CODE.png); }
 
 
 .fill:hover,
@@ -536,11 +534,16 @@ div:hover .whatsapp:not(:hover) {
     .btnYA {
         font-size: 110%;
     }
+
+
 }
 
 
 /* --- Tablet Styles (768px to 991.98px) --- */
 @media (min-width: 768px) and (max-width: 991.98px) {
+        .mini-lina {
+    height: 600px;
+padding-top: 40%; }
     .parte1 {
         height: 800px; /* Medium height for tablet hero section */
     }
@@ -601,7 +604,7 @@ div:hover .whatsapp:not(:hover) {
     }
 
     .img1te, .img2te, .img3te, .img4te {
-        width: 170px; /* Adjust inner image size */
+        width: 170px;
         height: 170px;
     }
 
@@ -611,21 +614,13 @@ div:hover .whatsapp:not(:hover) {
     }
 }
 
-/* --- Desktop Styles (992px to 1199.98px) --- */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    /* Styles for regular desktops, you can fine-tune here if needed,
-       otherwise, the base styles will mostly apply */
+
     .h1up {
-        font-size: 600%; /* Slightly smaller than original on smaller desktops */
+        font-size: 600%;
     }
     .img_intro {
-        width: 450px; /* Slightly smaller image on smaller desktops */
+        width: 450px;
         height: 450px;
     }
-}
-
-/* --- Larger Desktop Styles (1200px and up) --- */
-@media (min-width: 1200px) {
-    /* These styles inherit from the base (your original design)
-       unless specifically overridden for very large screens. */
 }

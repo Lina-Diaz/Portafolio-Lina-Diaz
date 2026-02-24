@@ -70,9 +70,9 @@ p {
     background-color: #e2e1e0;
     border-radius: 60px;
     margin: auto;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     padding: 2% 0;
-    max-width: 960px;
+    max-width: 900px;
 }
 
 .pro {
@@ -372,7 +372,7 @@ h1 {
     }
     .texto1 {
         border-radius: 30px;
-        width: 95%;
+        width: 90%;
     }
     p {
         font-size: 95%;
@@ -400,7 +400,7 @@ h1 {
         font-size: 36px;
     }
     .texto1 {
-        width: 90%;
+        width: 80%;
         border-radius: 40px;
     }
     .pro {

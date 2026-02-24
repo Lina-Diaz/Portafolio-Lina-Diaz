@@ -51,12 +51,11 @@ h3 {
 }
 
 p {
-  text-align: justify;
+  text-align: center;
   color: rgb(85, 37, 110);
   font-family: "Montserrat", sans-serif;
   width: 100%;
   margin: auto;
-  font-size: large;
   font-weight: 500;
 }
 
@@ -224,6 +223,11 @@ h1 {
   font-size: 40%;
 }
 
+.zonaRedImg{
+  height: 50vh; 
+  width: fit-content;
+}
+
 .main-content {
   margin: 6rem auto;
   max-width: 70ch;
@@ -350,8 +354,7 @@ h1 {
   font-size: 140%;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0px;
 }
 
 .colores {

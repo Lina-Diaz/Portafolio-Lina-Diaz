@@ -71,8 +71,7 @@ a {
   font-size: 180%;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin: 20px 0px;
 }
 
 p {
@@ -80,7 +79,6 @@ p {
   color: rgb(85, 37, 110);
   font-family: "Montserrat", sans-serif;
   margin: auto;
-  font-size: large;
   font-weight: 500;
 }
 
@@ -979,7 +977,7 @@ h1 {
     }
 
     .img1stage, .img2stage {
-        width: 80%; 
+        width: 60%; 
         height: 400px;
         margin: 0 auto 2rem auto; 
     }

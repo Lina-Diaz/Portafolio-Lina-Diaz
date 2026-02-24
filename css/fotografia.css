@@ -159,7 +159,6 @@ p{
     font-family: "Montserrat", sans-serif;
     width: 90%;
     margin: auto;
-    font-size: large;
     font-weight: 500;
 }
 
@@ -627,7 +626,7 @@ ol, ul {
 
     .pic1, .pic1-2 {
         width: 90%;
-        height: 400px; 
+        margin-bottom: 3%;
     }
 
     .bigpic2 {
@@ -644,7 +643,6 @@ ol, ul {
     .pic2, .pic3, .pic4, .pic5,
     .pic2-2, .pic3-2, .pic4-2, .pic5-2 {
         width: 48%; 
-        height: 180px; 
     }
 
     .texto1 {

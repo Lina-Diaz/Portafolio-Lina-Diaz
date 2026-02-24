@@ -72,16 +72,14 @@ a {
   font-size: 180%;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin: 20px 0px;
 }
 
 p {
-  text-align: justify;
+  text-align: center;
   color: rgb(85, 37, 110);
   font-family: "Montserrat", sans-serif;
   margin: auto;
-  font-size: large;
   font-weight: 500;
 }
 
@@ -168,6 +166,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 15%;
+  margin: 3% 0px;
 }
 
 .elempleo,
@@ -639,7 +638,6 @@ h1 {
 
 .slide {
   position: relative;
-  margin-top: 50px;
 }
 
 .slide-inner {
@@ -963,7 +961,6 @@ h2 {
 @media (min-width: 600px) {
   .card {
     height: 500px;
-    width: 400px;
   }
 }
 
@@ -1250,10 +1247,6 @@ h2 {
   
   .page-content {
     grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .card {
-    height: 400px;
   }
   
   .buttonHV {
