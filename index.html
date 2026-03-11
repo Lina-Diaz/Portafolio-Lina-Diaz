@@ -20,6 +20,11 @@
 </head>
 
 <body>
+
+    <div id="loader-screen">
+        <div class="loader"></div>
+    </div>
+
     <div class="contenedor">
 
         <header>
@@ -129,5 +134,26 @@
 
     </div>
 </body>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    const loader = document.getElementById("loader-screen");
+
+    setTimeout(function(){
+
+        loader.style.transition="opacity 0.6s";
+        loader.style.opacity="0";
+
+        setTimeout(function(){
+            loader.style.display="none";
+        },600);
+
+    },3000);
+
+});
+
+</script>
 
 </html>

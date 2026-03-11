@@ -18,6 +18,18 @@
 
 <body>
 
+    <!-- INTRO VIDEO -->
+    <div id="intro-video">
+    <video id="videoIntro" autoplay muted playsinline>
+        <source src="video/intro.mp4" type="video/mp4">
+    </video>
+    </div>
+
+    <!-- LOADER -->
+    <div id="loader-screen">
+        <div class="loader"></div>
+    </div>
+
     <div class="contenedor">
 
         <header>
@@ -331,7 +343,51 @@
                 });
             });
         }
+
+        document.addEventListener("DOMContentLoaded", function(){
+
+const video = document.getElementById("videoIntro");
+const intro = document.getElementById("intro-video");
+const loader = document.getElementById("loader-screen");
+
+/* CUANDO TERMINA EL VIDEO */
+
+video.addEventListener("ended", function(){
+
+intro.style.transition = "opacity 0.8s";
+intro.style.opacity = "0";
+
+setTimeout(function(){
+intro.style.display = "none";
+},800);
+
+});
+
+
+/* SI EL VIDEO FALLA */
+
+video.addEventListener("error", function(){
+
+intro.style.display = "none";
+loader.style.display = "flex";
+
+setTimeout(function(){
+
+loader.style.transition="opacity 0.6s";
+loader.style.opacity="0";
+
+setTimeout(function(){
+loader.style.display="none";
+},600);
+
+},3000);
+
+});
+
+});
+
     </script>
 </body>
+
 
 </html>

@@ -156,6 +156,29 @@ h1 {
     line-height: calc(var(--line-height) / 1.25);
 }
 
+.carousel-item{
+transition: transform 0.8s ease-in-out;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+background-color: rgba(0,0,0,0.4);
+border-radius:50%;
+padding:20px;
+}
+
+.carousel-control-prev {
+    left: -130px;
+}
+
+.carousel-control-next {
+    right: -130px;
+}
+
+.row {
+    margin: 0px 10px;
+}
+
 @media (min-width: 768px) {
     h1 {
         font-size: 480%;
@@ -446,4 +469,30 @@ h1 {
     .main-navigation {
         display: none;
     }
+}
+
+@media (max-width: 767.98px) {
+
+.carousel-item .row{
+display:flex;
+justify-content:center;
+}
+
+.carousel-item .col-md-6{
+flex:0 0 100%;
+max-width:100%;
+}
+
+.carousel-item .col-md-6:nth-child(2){
+display:none;
+}
+
+.carousel-control-prev{
+left:-20px;
+}
+
+.carousel-control-next{
+right:-20px;
+}
+
 }
