@@ -55,6 +55,11 @@
         </header>
 
         <div class="parte1">
+            <video autoplay muted loop playsinline id="videoLina" class="video-fondo">
+                <source src="video/Video_De_Formas_Orgánicas_Animadas.mp4" type="video/mp4">
+                Tu navegador no soporta video.
+            </video>
+
             <div class="intro">
                 <div class="introduccion">
                     <h3 class="h3up">PORTAFOLIO</h3>
@@ -79,6 +84,10 @@
         </div>
 
         <div class="parte2" id="proyectos">
+            <video autoplay muted loop playsinline class="video-fondo">
+                <source src="video/FONDO_VIDEO_SOBRE MI.mp4" type="video/mp4">
+                Tu navegador no soporta video.
+            </video>
             <div class="contexto1">
                 <h1>PROYECTOS</h1>
                 <p>Cada proyecto responde a un reto específico. Identidad, editorial, fotografía o multimedia: el objetivo siempre es el mismo — comunicar mejor. Explora el proceso. Descubre el resultado.</p>
@@ -89,6 +98,11 @@
         </div>
 
         <div class="parte4">
+            <video autoplay muted loop playsinline class="video-fondo">
+                <source src="video/FONDO_VIDEO_SOBRE MI.mp4" type="video/mp4">
+                Tu navegador no soporta video.
+            </video>
+
             <div class="contexto3">
                 <h1>SOBRE MI</h1>
                 <h4>¡Conoce más sobre mí!</h4>
@@ -140,6 +154,7 @@
 document.addEventListener("DOMContentLoaded", function(){
 
     const loader = document.getElementById("loader-screen");
+    const videoHero = document.getElementById('videoLina');
 
     setTimeout(function(){
 
@@ -152,6 +167,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
     },3000);
 
+    videoHero.playbackRate = 0.7;
+    
 });
 
 </script>

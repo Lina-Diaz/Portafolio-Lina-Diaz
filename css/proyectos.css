@@ -33,14 +33,54 @@ a {
     height: 40px;
 }
 
+
 .parte1 {
-    background-image: url(../img/FONDOS-01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 1000px;
+    /* Quitamos el background-image anterior */
+    height: 1000px; 
     display: flex;
     align-items: center;
+    justify-content: center; 
+    position: relative; /* Base para las capas */
+    overflow: hidden; /* Corta el video excedente */
+    background-color: #000; /* Fondo de seguridad */
+}
+
+/* LA CAPA MORADA (30% opacidad) */
+.parte1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(85, 37, 110, 0.3); /* Morado Lina Díaz al 30% */
+    z-index: 1; /* Por encima del video */
+}
+
+/* EL VIDEO DE FONDO */
+.video-fondo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantiene la proporción como 'background-size: cover' */
+    transform: translate(-50%, -50%);
+    z-index: 0; /* Capa más profunda */
+    pointer-events: none; /* El video no interfiere con los clics */
+}
+
+/* TU CONTENIDO (Título y flecha) */
+.contexto1 {
+    position: relative;
+    z-index: 2; /* Por encima de la capa morada */
+    text-align: center;
+    color: white; /* Asegúrate de que el texto resalte */
+}
+
+.flecha {
+    /* Aquí se mantienen tus estilos actuales de la flecha */
+    margin: 0 auto;
 }
 
 .parte2 {

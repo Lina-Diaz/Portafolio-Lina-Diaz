@@ -41,33 +41,61 @@ button:hover{
     box-shadow: 0px 0px 15px white;
 }
 
-.parte1, .parte2, .parte4{
-    height: 1000px; /* Altura fija para escritorio */
+.parte1, .parte2, .parte4 {
+    height: 1000px;
     display: flex;
     align-items: center;
+    position: relative; /* Base para las capas */
+    overflow: hidden; 
+    background-color: #000;
     border-bottom: 6px solid rgb(85, 37, 110);
-    position: relative; /* Para posicionar la flecha */
 }
 
-.parte1{
-    background-image: url(../img/fondo-29.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.parte1::before, 
+.parte2::before, 
+.parte4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
-.parte2{
-    background-image: url(../img/FONDOS-01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.parte1::before {
+    background-color: #3b1c4faf;
+} 
+.parte2::before {
+    background-color: #55266e9d;
+}
+.parte4::before {
+    background-color:  #7f5ba4ab;
 }
 
-.parte4{
-    background-image: url(../img/FONDOS-03.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.video-fondo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 0; /* Al fondo de todo */
+    pointer-events: none;
+}
+
+.intro, 
+.contexto1, 
+.contexto3 {
+    position: relative;
+    z-index: 2; /* Por encima de la capa morada */
+    width: 100%;
+}
+
+.flecha, button {
+    position: relative;
+    z-index: 3; /* Un nivel más por si acaso */
 }
 
 .intro, .contexto1, .contexto3{
